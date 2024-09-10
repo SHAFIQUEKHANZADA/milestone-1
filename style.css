@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-.container {
+.mainDiv {
     display: flex;
     max-width: 900px;
     margin: 50px auto;
