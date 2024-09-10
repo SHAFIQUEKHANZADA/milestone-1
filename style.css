@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    width: 30%;
+    padding: 20px;
+    color: white;
+    background-color: rgb(22, 56, 83);
+}
+
+.right-section {
+    width: 70%;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ 
+
+
+.name h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap; 
+}
+
+.name h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+}
+
+.about-me, .work-experience, .references {
+    margin-bottom: 30px;
+}
+
+.education, .skills, .language {
+    margin-bottom: 10px;
+}
+
+.education ul, .skills ul, .language ul, .work-experience ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.education li, .skills li, .language li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* .education li::before, .skills li::before, .language li::before, .work-experience li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+.education li::before, .skills li::before, .language li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.education h4, .skills h4, .language h4 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.education p, .skills p, .language p {
+    margin: 0;
+}
+
+.work-experience li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.work-experience li h4 {
+    margin-bottom: 5px;
+}
+
+.work-experience li h5 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.work-experience li h6 {
+    margin-bottom: 10px;
+}
+
+.references {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reference {
+    width: 48%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reference h4 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.reference h5 {
+    margin-bottom: 5px;
+}
+
+.reference p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        border-right: none;
+    }
+
+    .references {
+        flex-direction: column;
+    }
+
+    .reference {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.ahr {
+    width: 15%; 
+    position: relative;  
+    right: 41%;  
+    border: 1px solid
+}
+.whr {
+    width: 30%; 
+    position: relative;  
+    right: 33%;  
+    border: 1px solid
+}
+
+.toggle-section {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.hidden-content {
+    display: none;
+}
+
+.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+.collapsed .arrow {
+    transform: rotate(0deg);
+}
