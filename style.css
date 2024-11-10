@@ -8,7 +8,7 @@ body {
 
 .mainDiv {
     display: flex;
-    max-width: 900px;
+    width: 66vw;
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -27,8 +27,8 @@ body {
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 11vw;
+    height: 11vw;
     border-radius: 50%;
     border: 5px solid white;
     overflow: hidden;
@@ -43,9 +43,8 @@ body {
 
  
 
-
 .name h1 {
-    font-size: 1.8em;
+    font-size: 2.1vw;
     margin-bottom: 5px;
     text-align: center;
     margin-bottom: 20px;
@@ -213,4 +212,109 @@ body {
 
 .collapsed .arrow {
     transform: rotate(0deg);
+}
+
+.aboutPara {
+    font-size: 1.17vw;
+}
+
+@media (max-width: 640px) {
+    .aboutPara {
+        font-size: 2.7vw;
+    }
+    .mainDiv {
+        width: 98%;
+        margin: 20px auto;
+    }
+    .profile-picture {
+        width: 20vw;
+        height: 20vw;
+        border: 2px solid white;
+    }
+    .name h1 {
+        font-size: 3vw;
+    }
+    .left-section {
+        width: 30vw;
+        padding: 8px;
+    }
+    .right-section {
+        width: 70vw;
+        padding: 8px;
+    }
+    .name h2 {
+        font-size: 2.6vw;
+        margin-bottom: 10px;
+    }
+    .contact-info li  {
+        font-size: 2.4vw;
+        margin-bottom: 3px;
+    }
+    .toggle-section h3 {
+        font-size: 4vw;
+        margin: 2px;
+    }
+    .about-me, .work-experience, .references {
+        margin-bottom: 15px;
+    }
+    .about-me h3, .work-experience h3, .references h3 {
+       font-size: 3vw;
+    }
+    .work-experience li {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .work-experience li h4 {
+        margin-bottom: 5px;
+    }
+    
+    .work-experience li h5 {
+        margin-bottom: 2px;
+        margin-top: 10px;
+        font-size: 3vw;
+    }
+    
+    .work-experience li h6 {
+        margin-bottom: 4px;
+        margin-top: 10px;
+    }
+    .work-experience li h4 {
+      font-size: 3vw;
+      margin-top: 0px;
+    }
+   .work-experience p {
+    font-size: 2.7vw;
+   }
+   .work-experience li h4 {
+    margin-bottom: 5px;
+}
+.reference {
+    width: auto;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+}
+ 
+.reference h4 {
+    margin-bottom: 5px;
+    font-size: 3.5vw;
+    margin-top: 0px;
+}
+
+.reference h5 {
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+
+.reference p {
+    margin: 0;
+    font-size: 2.7vw;
+}
+.hidden-content li   {
+    font-size: 1vw;
+}
+ 
+ 
 }
